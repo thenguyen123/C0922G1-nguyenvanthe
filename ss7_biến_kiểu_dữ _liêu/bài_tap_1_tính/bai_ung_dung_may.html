@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<from>
+    <input type="number" placeholder="Nhâp số thứ nhất" id="number1">
+    <input type="number" placeholder="Nhập số thứ hai" id="number2">
+    
+
+<button onclick="minus()">Trừ</button>
+<button onclick="plus()" > Cộng</button>
+<p id="result"> Kết quả</p>
+</from>
+</body>
+</html>
+<script>
+    function plus() {
+        let a = document.getElementById('number1').value
+        let b = document.getElementById('number2').value
+        let result = parseFloat(a) + parseFloat(b);
+        document.getElementById('result').innerHTML=result;
+
+
+    }
+    function minus() {
+        let a = document.getElementById('number1').value
+        let b = document.getElementById('number2').value
+        let result = parseFloat(a) - parseFloat(b);
+
+        document.getElementById('result').innerHTML=result;
+    }
+</script>

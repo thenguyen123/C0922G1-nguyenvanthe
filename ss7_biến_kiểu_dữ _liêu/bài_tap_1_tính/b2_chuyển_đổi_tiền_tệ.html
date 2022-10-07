@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td>Amount</td>
+
+        <td>From currency</td>
+        <td>To Currency</td>
+    </tr>
+    <tr>
+        <td>
+            <from>
+            <input type="number" id="money">
+        </from>
+
+        </td>
+        <td>
+
+        <select id="from">
+            <option value="a">VietNam</option>
+            <option value="b">USA</option>
+
+        </td>
+        <td>
+            <select id="to">
+        <option value="a">VietNam</option>
+        <option value="b">USA</option>
+
+    </select>
+        </td>
+        <td>
+            <button onclick="convert()">Convert</button>
+        </td>
+
+    </tr>
+</table>
+<p id="ketqua"></p>
+
+    <script>
+        function convert() {
+            let  sotien = document.getElementById('money').value
+            let from = document.getElementById('from') . value
+            let to =document.getElementById('to') . value
+            let result
+          if ( from == to ){
+              result = "result:" + sotien
+
+
+          }
+          if (from== "a" && to=="b"){
+              result= "result" + sotien/23000
+
+          }
+          if (from=="b"&& to=="a"){
+             result = "result" +sotien*23000;
+
+          }
+            document.getElementById("ketqua").innerHTML=result
+
+        }
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
