@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let tienLuong=parseFloat(prompt('nhập tiền lương'));
+    let a=5000000
+    let b=10000000
+    let c=18000000
+    let d=32000000
+    let e=52000000
+    let f=80000000
+if (tienLuong<a) {
+
+    document.write('không phải nộp tiền thuế :' )
+}else if (a<tienLuong && tienLuong<b){
+    thue=tienLuong*5/100
+    document.write('tiền thuế phải nộp:' + thue)
+}else if (b<tienLuong && tienLuong<c){
+    thue=tienLuong*10/100
+    document.write('tiền thuế phải nộp:' + thue)
+}else if(c<tienLuong && tienLuong<d){
+    thue=tienLuong*15/100
+    document.write('tiền thuế phải nộp:' + thue)
+}else if(d<tienLuong && tienLuong<e) {
+    thue = tienLuong * 20 / 100
+    document.write('tiền thuế phải nộp:' + thue)
+}else if(e<tienLuong && tienLuong<f) {
+    thue = tienLuong * 25/ 100
+    document.write('tiền thuế phải nộp:' + thue)
+} else if(f<tienLuong) {
+    thue = tienLuong * 30 / 100
+    document.write('tiền thuế phải nộp:' + thue)
+}
+
+</script>

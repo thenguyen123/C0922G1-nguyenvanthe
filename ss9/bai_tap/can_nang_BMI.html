@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let weight=parseFloat(prompt('inputweight'))
+    let height=parseFloat(prompt('inputhheight'))
+    let BMI= weight / ( height*height)
+
+        if (BMI < 18)
+            document.write('Underweight');
+        else if (18 <= BMI && BMI < 25)
+            document.write('normal')
+        else if (25 <= BMI && BMI < 30)
+            document.write('Overweight')
+        else
+            document.write('Obese')
+
+
+</script>

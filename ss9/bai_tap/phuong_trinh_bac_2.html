@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Phương trình bậc 2 có dạng ax^2 + bx + c=0 a≠0</h2>
+</body>
+</html>
+<script>
+    let a=parseFloat(prompt('nhập a'))
+    let b=parseFloat(prompt('nhập b'))
+    let c=parseFloat(prompt('nhập c'))
+    let D=b*b- 4*a*c
+    let S=Math.sqrt(D)
+    if (D<0){
+        document.write('vô nghiệm')
+    }else if (D==0){
+        x= (-b/2*a)
+      document.write('một nghiệm là:'+ x)
+    }else if (D>0){
+        x1= (-b+ S)/ (2*a)
+        x2= (-b - S)/ (2*a)
+
+       document.writeln(' nghiệm là:'+ x1)
+        document.write('nghiệm là x:'+x2)
+
+    }
+</script>

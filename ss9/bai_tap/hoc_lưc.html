@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <input type="number" id="diem1" placeholder="điểm kiểm tra"/>
+    <input type="number" id="diem2" placeholder="điểm thi giữ kì"/>
+    <input type="number" id="diem3" placeholder="điểm thi cuối kì"/>
+    <button type="submit" onclick="pass()">kết quả</button>
+
+</body>
+</html>
+<!--Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ-->
+<script>
+    function pass() {
+        let a =document.getElementById("diem1").value
+        let b = document.getElementById("diem2").value
+        let c = document.getElementById("diem3").value
+        diem = (parseInt(a)+parseInt(b)+parseInt(b))/3
+      if (diem<5){
+          document.write('yếu')
+      }else if (5<diem && diem<7){
+          document.write('trung bình' )
+      }else if(7<=diem && diem<8){
+          document.write('khá')
+      }else if (8<=diem && diem<=10){
+          document.write('giỏi')
+      }
+    }
+</script>

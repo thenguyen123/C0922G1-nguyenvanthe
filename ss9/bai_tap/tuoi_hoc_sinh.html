@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Tuổi học sinh đủ vào lớp 10</h3>
+    <input type="number "  id="inputage"/>
+    <input type="submit" onclick="tuôi()"/>
+    <p id="result"></p>
+
+
+</body>
+</html>
+<script>
+    function tuôi() {
+let age= document.getElementById("inputage").value
+
+    // let age= +prompt('input age')
+    if (age > 14){
+
+        document.write('enough')
+        // alert('Đủ tuổi vòa lớp 10')
+    }else {
+
+        document.write('Not enough')
+        // alert ('Chưa đủ tuổi')
+    }
+
+    }
+</script>

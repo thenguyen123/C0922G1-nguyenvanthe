@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3> Xét hình tam giác</h3>
+<!--a,b,c > 0-->
+<!--a + b > c-->
+<!--b + c > a-->
+<!--a + c > b-->
+</body>
+</html>
+<script>
+    let a= parseFloat(prompt('nhập a'))
+    let b= parseFloat(prompt('nhập b'))
+    let c= parseFloat(prompt('nhập c'))
+    if (a>0 && b>0 && c>0){
+        if (a+b>c){
+          if (b+c>a) {
+              if (a + c > b) {
+                  document.write('Là tam giác')}
+              else
+                  {
+                      document.write('không phải tam giác')
+                  }
+          }else {
+                document.write('không phải tam giác')
+            }
+          }
+        else {
+            document.write('không phải tam giác')
+        }
+    }
+</script>

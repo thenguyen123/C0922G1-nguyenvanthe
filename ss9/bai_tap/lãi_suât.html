@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="tiền gốc" id="money"/>
+<input type="text" placeholder="năm" id="year"/>
+<button type="button" onclick="laiSuat()" >kết quả</button>
+<p id="ketQua"></p>
+</body>
+</html>
+<script>
+    function laiSuat() {
+        let P = document.getElementById("money").value
+
+        let n = document.getElementById("year").value
+        let D = (1 + 7 / 100)
+        let C = Math.pow(D, n)
+        result = P * C
+        document.getElementById("ketQua").innerHTML = "kết quả là:" + result
+    }
+</script>
