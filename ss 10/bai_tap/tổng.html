@@ -5,18 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-<button onclick="tong()" >Click to run</button>
+
 <script>
-    function tong() {
-        let i = 1; j = 1; count = 2; fibo = 0; total = 2;
-        for (count = 2; count <= 20; count++) {
-            fibo = i +j;
-            i = j;
-            j = fibo;
-            total += fibo;
-        }
-       document.write(total)
-    }
+let a=0;
+let b=1
+let c;
+sum =a+b
+    for (i=1;i<=20;i++){
+        c=a+b
+    sum=c+sum
+    a=b
+    b=c
+}
+document.write(sum)
 </script>
 </body>
 </html>
