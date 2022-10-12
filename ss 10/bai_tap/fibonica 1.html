@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<button onclick="fibonica()" >Click to run</button>
+
+
+</body>
+<script>
+
+    function fibonica() {
+        let  i = 1; j = 1; fibo = 0 ;count = 2; text = "1 1";
+        for (count = 2; count <= 20; count++) {
+            fibo = i + j;
+            i = j;
+            j = fibo;
+            text += " " + fibo;
+        }
+        document.write( text)
+    }
+
+</script>
+</html>

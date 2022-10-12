@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="tong()" >Click to run</button>
+<script>
+    function tong() {
+        let i = 1; j = 1; count = 2; fibo = 0; total = 2;
+        for (count = 2; count <= 20; count++) {
+            fibo = i +j;
+            i = j;
+            j = fibo;
+            total += fibo;
+        }
+       document.write(total)
+    }
+</script>
+</body>
+</html>
