@@ -17,20 +17,13 @@
     let b= parseFloat(prompt('nhập b'))
     let c= parseFloat(prompt('nhập c'))
     if (a>0 && b>0 && c>0){
-        if (a+b>c){
-          if (b+c>a) {
-              if (a + c > b) {
-                  document.write('Là tam giác')}
-              else
-                  {
-                      document.write('không phải tam giác')
-                  }
-          }else {
-                document.write('không phải tam giác')
-            }
-          }
-        else {
+        if(a+b>c && b+c>a && a+c>b){
+            document.write('là tam giác')
+        }else {
             document.write('không phải tam giác')
         }
+
+    }else {
+        document.write('không phai tam giác')
     }
 </script>
