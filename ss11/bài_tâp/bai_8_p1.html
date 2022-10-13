@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="text"  onclick="play()">choi</button>
+
+</body>
+</html>
+<script>
+    function play() {
+        let number=+prompt('nhap so ban doan')
+        let doan=Math.floor(Math.random()*10)
+        let count=0
+        while (number!==doan){
+            count++
+            if (count==3) {
+                alert('hết sô lần đoán')
+            }
+            else if(number<doan) {
+                alert('só bạn nhập bé hơn')
+            }
+            else   {
+                alert('số bạn nhập bé hơn')
+            }
+            number=+prompt('nhap so ban doan')
+        }if (count==3) {
+            alert('nhập lại sô')
+        }
+        else {
+            alert('chúc mừng bạn')
+        }
+
+
+
+
+
+    }
+</script>
