@@ -7,11 +7,10 @@
 <body>
 <script>
     let C=[]
-    let input=prompt('nhập vào chuỗi 10 số:')
-    C.push(input)
-    document.writeln(C)
+
     let test=prompt('nhập vào một sô')
-    for(i=0;i<C.length;i++) {
+    for(i=0;i<10;i++) {
+        C[i]=prompt('nhập vào  1 số:')
         if (C[i] === test) {
             C.splice(i,1)
             C.push(0)
