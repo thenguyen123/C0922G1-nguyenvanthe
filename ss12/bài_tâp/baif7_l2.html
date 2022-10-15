@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let C=[]
+    let input=prompt('nhập vào chuỗi 10 số:')
+    C.push(input)
+    document.writeln(C)
+    let test=prompt('nhập vào một sô')
+    for(i=0;i<C.length;i++) {
+        if (C[i] === test) {
+            C.splice(i,1)
+            C.push(0)
+        }
+    }document.write(C)
+
+</script>
+</body>
+</html>

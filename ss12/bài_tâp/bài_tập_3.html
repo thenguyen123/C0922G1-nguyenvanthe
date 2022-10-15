@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arr= [1,2,5,6,5,-14,9,8,10,14]
+    let a=0
+    let max=arr[0]
+    for(i=0;i<arr.length;i++) {
+        if (max < arr[i]) {
+            max = arr[i]
+            a=i
+        }
+    }document.writeln('giá trị lớn nhất là:'+ max)
+    document.write("vị trí " +i + '<br>')
+
+    let sum=0
+    for(i=0; i<arr.length;i++)
+        sum+=arr[i]
+    document.write( 'tổng:' +sum)
+</script>
