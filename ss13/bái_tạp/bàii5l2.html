@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+let C=prompt('nhập chuỗi 1')
+let D=prompt('nhập chuỗi 2')
+        let flag1 = true
+if (C.length!==D.length) {
+    document.write('chuỗi một không bằng chuỗi hai')
+}else {
+    for (i = 0; i < C.length; i++) {
+        if (C[i] !== D[i]) {
+            flag1 = false
+            break;
+        }
+    }
+    if (flag1) {
+        document.write('chuỗi một giống chuỗi hai')
+    } else {
+        document.write('chuỗi một khác chuỗi hai')
+    }
+}
+</script>
