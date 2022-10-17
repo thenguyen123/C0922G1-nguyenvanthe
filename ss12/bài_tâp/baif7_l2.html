@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 <script>
-    let C=[]
+
+let C=[0,1,2,3,4,5,6,61,7]
 
     let test=prompt('nhập vào một sô')
+
     for(i=0;i<10;i++) {
-        C[i]=prompt('nhập vào  1 số:')
-        if (C[i] === test) {
-            C.splice(i,1)
+        if (C[i] == test) {
+         C.splice(i,1)
             C.push(0)
         }
     }document.write(C)
