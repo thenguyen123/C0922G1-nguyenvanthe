@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let inputA=parseFloat(prompt('nhập số a'));
+    let inputB=parseFloat(prompt('nhập số b'));
+    let inputC=parseFloat(prompt('nhập số c'));
+    check(inputA,inputB,inputC)
+    function check() {
+if(inputA>inputB){
+    if(inputA>inputC){
+        document.write('số lớn nhất là a')
+    }else{
+        document.write('c là số lớn nhất')
+    }
+
+}else if (inputB>inputC){
+        document.write('b là số lớn nhất')
+    }else {
+        document.write('c la số lớn nhất')
+    }
+    }
+</script>

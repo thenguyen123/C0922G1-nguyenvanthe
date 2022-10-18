@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=0
+    let S=1
+    let inputNumber= +prompt('nhập số tự nhiên')
+    tinhGiaiThua(inputNumber)
+
+    function tinhGiaiThua() {
+        if (inputNumber===0) {
+            document.write('giai thừa bằng 1')
+        }else {
+            for (i = 1; i<= inputNumber; i++) {
+                a = i
+                S = a * S
+            }
+        }document.write(S)
+    }
+</script>
+</body>
+</html>

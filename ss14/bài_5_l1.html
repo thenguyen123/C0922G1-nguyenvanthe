@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=0
+    let inputStar= prompt('nhập tên ngôi sao')
+        let arrOne=['Polaris', "Aldebaran", "Deneb", "Vega", "Altair", 'Dubhe', 'Regulus']
+        let arrTwo=[ "Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major"," Leo"]
+    search(inputStar)
+    function search() {
+
+        for (i=0;i<arrOne.length;i++){
+            if (arrOne[i]===inputStar) {
+           a = i
+
+    }
+            for(j=0;j<arrTwo.length;j++){
+                result=arrTwo[a]
+            }document.write(result)
+}
+        }
+</script>
+</body>
+</html>
+
+
+
