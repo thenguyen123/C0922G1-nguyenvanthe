@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let count=0
+let inputArray=prompt('nhâp chuỗi ')
+let input=prompt('nhập ký tự')
+check(inputArray,input)
+function check() {
+for (i=0; i<inputArray.length;i++)
+if (inputArray[i]===input)
+    count++
+
+}if (count===0) {
+    document.write('-1')
+}else {
+    document.write(input+" Xuất hiện " +count+ " lần")
+}
+</script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script> let count=0
+    let s1= "aabcc"
+   let  s2 = "adcaa"
+commonCharacterCount(s1, s2)
+    function commonCharacterCount() {
+for(i=0;i<s1.length-1;i++){
+    // for(j=0;j<s2.length;j++) {
+    //     if (s1[i] === s2[j])
+    //         count++
+    if (s1.indexOf(s2[i])>-1 ){
+        count++
+    }
+    }
+}
+    document.write(count)
+</script>
