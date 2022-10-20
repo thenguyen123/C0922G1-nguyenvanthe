@@ -10,16 +10,19 @@
 </html>
 <script>
     let c;
-    let inputA=parseInt(prompt('nhập số a'))
-    let inputB=parseInt(prompt('nhập số b'))
-    document.write('trước: '+inputA +' '+inputB+''+'<br>')
+    let inputA = parseInt(prompt('nhập số a'))
+    let inputB = parseInt(prompt('nhập số b'))
+    document.write('trước: ' + inputA + ' ' + inputB + '' + '<br>')
 
-    convert(inputA,inputB)
+    convert(inputA, inputB)
+
     function convert() {
-        c=inputA
-        inputA=inputB
-        inputB=c
-return;
-    } document.write('sau : '+inputA+ '  '+inputB+'<br>')
+        c = inputA
+        inputA = inputB
+        inputB = c
+        return;
+    }
+
+    document.write('sau : ' + inputA + '  ' + inputB + '<br>')
 
 </script>

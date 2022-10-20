@@ -9,22 +9,23 @@
 </body>
 </html>
 <script>
-    let inputA=parseFloat(prompt('nhập số a'));
-    let inputB=parseFloat(prompt('nhập số b'));
-    let inputC=parseFloat(prompt('nhập số c'));
-    check(inputA,inputB,inputC)
-    function check() {
-if(inputA<inputB){
-    if(inputA<inputC){
-        document.write('số nhỏ nhất là a: ' +inputA)
-    }else{
-        document.write('c là số nhỏ nhất: ' +inputC)
-    }
+    let inputA = parseFloat(prompt('nhập số a'));
+    let inputB = parseFloat(prompt('nhập số b'));
+    let inputC = parseFloat(prompt('nhập số c'));
+    check(inputA, inputB, inputC)
 
-}else if (inputB<inputC){
-        document.write('b là số nhỏ nhất: '+inputB)
-    }else {
-        document.write('c la số nhỏ nhất:'+inputC)
-    }
+    function check() {
+        if (inputA < inputB) {
+            if (inputA < inputC) {
+                document.write('số nhỏ nhất là a: ' + inputA)
+            } else {
+                document.write('c là số nhỏ nhất: ' + inputC)
+            }
+
+        } else if (inputB < inputC) {
+            document.write('b là số nhỏ nhất: ' + inputB)
+        } else {
+            document.write('c la số nhỏ nhất:' + inputC)
+        }
     }
 </script>

@@ -6,17 +6,20 @@
 </head>
 <body>
 <script>
-    let dienTich=0
-    chuVi=0
-    let inputR=parseFloat(prompt('nhập bán kính hình tròn'))
+    let dienTich = 0
+    chuVi = 0
+    let inputR = parseFloat(prompt('nhập bán kính hình tròn'))
     tinhHinhTron(inputR);
+
     function tinhHinhTron() {
 
-        dienTich=Math.pow(inputR,2)*3.14
-        chuVi= inputR*2* 3.14
+        dienTich = Math.pow(inputR, 2) * 3.14
+        chuVi = inputR * 2 * 3.14
         return;
-    }document.write('diện tích hình tròn là :'+dienTich +'<br>')
-    document.write('chu vi hình tròn là :'+chuVi +'<br>')
+    }
+
+    document.write('diện tích hình tròn là :' + dienTich + '<br>')
+    document.write('chu vi hình tròn là :' + chuVi + '<br>')
 </script>
 </body>
 </html>
