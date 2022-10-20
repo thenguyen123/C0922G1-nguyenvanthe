@@ -9,11 +9,18 @@
 </body>
 </html>
 <script>
-    let A=prompt('nhập chuỗi mười số ')
-    let B=prompt('nhập chuỗi mười số ')
+    let a=parseInt(prompt('nhập chuỗi mười số '))
+    let b=parseInt(prompt('nhập chuỗi mười số '))
+    let A=a+""
+   let B=b+ ""
+    if (A>10 && B>10) {
+        document.write('nhập lại')
+    }
+    else {
     C=A.concat(B)
     document.writeln(A +"<br>")
     document.writeln(B+"<br>" )
    
     document.write(C +"<br>")
+    }
 </script>
