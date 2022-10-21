@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight
+        }
+
+        isEmpty() {
+            if (this.weight <= 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        decrease() {
+            this.weight--;
+        }
+    }
+
+    class Human {
+        constructor(name, Weight, say) {
+            this.name = name
+            this.say = say
+            this.Weight = Weight
+        }
+
+        getsay() {
+            return this.say
+        }
+
+        checkApple(apple) {
+            if (apple.isEmpty()) {
+                document.write(' Táo hết' + '<br>')
+            } else {
+                document.write(' Táo còn' + '<br>')
+            }
+        }
+
+        eat(apple) {
+            if (apple.isEmpty()) {
+                document.write('Nhịn ăn' + '<br>')
+            } else {
+                document.write(this.name + ' Đang ăn' + '<br>')
+                this.Weight++;
+                apple.decrease();
+
+            }
+        }
+
+    }
+
+    let apple = new Apple(10);
+    let adam = new Human('Adam', 75, 'ăn nhanh lên')
+    let eva = new Human('Eva', 57, 'ăn nhanh lên')
+    let Say = new Human('name', 57, 'ăn nhanh lên')
+    let a = Say.getsay()
+    for (i = 0; i < 6; i++) {
+        adam.checkApple((apple))
+        eva.eat(apple);
+
+        document.write(a + '<br>')
+        document.write('cân nặng ' + eva.Weight + "<br>")
+        document.write('Quả táo còn ' + apple.weight + '<br>')
+        eva.checkApple((apple))
+        adam.eat(apple);
+        document.write('cân nặng ' + adam.Weight + "<br>")
+        document.write('Quả táo còn ' + apple.weight + "<br>" + '<br>')
+
+
+    }
+
+</script>
