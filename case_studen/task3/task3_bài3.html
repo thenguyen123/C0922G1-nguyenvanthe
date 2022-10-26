@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let numerators = [8, 9, 4]
+    let denominators = [2, 1, 4]
+    let maxFraction = 0
+    for (let i = 0; i < numerators.length; i++) {
+        if (numerators[i] / denominators[i] > maxFraction) {
+            maxFraction = numerators[i] / denominators[i]
+            max = (numerators[i] + '/' + denominators[i])
+            index = i
+        }
+    }
+    document.writeln('phân số lớn nhất là :' + max + ' chỉ số là:' + index)
+</script>

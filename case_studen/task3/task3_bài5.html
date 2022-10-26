@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-image: url("../../anh-dep-ben-ly-cafe_110730424.jpg ");
+        }
+
+        h1 {
+            color: blue;
+            margin: 50px;
+        }
+
+        p {
+            color: red;
+        }
+
+        button {
+            padding: 20px;
+            background-color: burlywood;
+            color: blue;
+            font-size: 20px
+        }
+    </style>
+</head>
+<body>
+<h1>Menu</h1>
+
+<table>
+    <th>
+        <p id="list"></p>
+    </th>
+    <tr>
+        <td>
+            <button onclick="exit()" type="button" style="width: 200px">7 exit</button>
+        </td>
+
+    </tr>
+</table>
+
+</body>
+</html>
+<script>
+    let menues = ['cafe', 'Cam vắt', 'Nước ép cà rốt', 'Nước ép cà chua', 'Nước lọc', 'Nước dừa']
+    let prices = [20000, 30000, 33000, 32000, 10000, 21000]
+    table = ''
+    for (let i = 0; i < menues.length; i++) {
+        table += '<tr>'
+        table += '<td><button type="button" onclick="result(' + i + ')" style="width: 200px">' + (i + 1) + '.' + menues[i] + ' </button></td>'
+        table += '<br><br></tr>'
+    }
+    document.writeln(table)
+
+    let sum = 0
+    let sumMenu = ''
+    do {
+        function result(i) {
+            input = +prompt('giá của  ' + menues[i] + ' là ' + prices[i] + 'VND. Mời bạn nhập số lượng')
+            if (input == 0 || (isNaN(input))) {
+                input = +prompt('nhập lại')
+            }
+            alert(' giá của ' + input + ' sản phẩm ' + menues[i] + ' là ' + (prices[i] * input) + 'VND')
+            sum += prices[i] * input
+            sumMenu = input + " " + menues[i] + " "
+        }
+    }
+    while (i < 7);
+
+    function exit() {
+        alert('tổng số tiền là ' + sum + 'các sản phẩm ' + sumMenu + 'VND')
+    }
+</script>

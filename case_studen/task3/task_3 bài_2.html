@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+    let arr = [3, 4, 5, 6, 8, 9, 10]
+    let arrTwo = [11, 3, 4, 5, 43, 6, 8, 9]
+    let arrMiss = [];
+    let arrC = [];
+    for (let i = 0; i < arrTwo.length; i++) {
+        let count = 0
+        for (j = 0; j < arr.length; j++) {
+            if (arr[j] === arrTwo[i]) {
+
+                count++
+                break;
+            }
+        }
+        if (count < 1) {
+            arrMiss.push(arrTwo[i])
+        }
+    }
+    for (let i = 0; i < arr.length; i++) {
+        let count = 0
+        for (let j = 0; j < arrTwo.length; j++) {
+            if (arrTwo[j] === arr[i]) {
+
+                count++
+                break;
+            }
+        }
+        if (count < 1) {
+            arrC.push(arr[i])
+        }
+    }
+    document.writeln('Mảng một:  ' + arr + '<br>')
+    document.writeln('Mảng hai:  ' + arrTwo + '<br>')
+    document.writeln('Những phần tử không có trong mảng : ' + arrMiss.concat(arrC) + '<br>')
+
+</script>
