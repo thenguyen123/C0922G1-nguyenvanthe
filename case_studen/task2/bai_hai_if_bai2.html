@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="nhap"/>
+<button type="button" onclick="ketQua()">kết quả</button>
+<p id="result"></p>
+<p id="result1"></p>
+</body>
+</html>
+<script>
+    let a = 5000000
+    let b = 7000000
+    let c = 15000000
+let thue=0
+    let tienLuong=0
+    function ketQua() {
+        input = document.getElementById('nhap').value
+        if (input < 0) {
+            alert('nhập lại số lương')
+        } else if (input < a) {
+            alert('miễn thuế')
+        } else if (input < b && input > a) {
+            thue = input * 5 / 100
+            tienLuong = input - thue
+            document.getElementById('result').innerHTML = 'Thuế phải nôp ' +thue
+            document.getElementById('result1').innerHTML= 'Tiền Lương ròng ' +tienLuong
+        } else if (input < c && input > b) {
+            thue = input * 10 / 100
+            tienLuong = input - thue
+            document.getElementById('result').innerHTML = 'Thuế phải nôp ' +thue
+            document.getElementById('result1').innerHTML= 'Tiền Lương ròng ' +tienLuong
+        } else if (input > c) {
+            thue = input * 15 / 100
+            tienLuong = input - thue
+            document.getElementById('result').innerHTML = 'Thuế phải nôp ' +thue
+            document.getElementById('result1').innerHTML= 'Tiền Lương ròng ' +tienLuong
+        }
+
+
+    }
+</script>

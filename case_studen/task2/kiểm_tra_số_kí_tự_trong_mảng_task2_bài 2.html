@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let count =0
+    let input=prompt('nhập một ký tự ');
+    let arr=['u','o','i','a','e'];
+    let arrUpCase=['U','O','I','A','E'];
+    for (let i=0;i<arr.length;i++) {
+        if (arr[i] === input || arrUpCase[i] === input) {
+            count++
+        }
+    }
+    if (count>0){
+            document.write(input + ' là một nguyên âm')
+    }else{
+        document.write(input + ' không phải là một nguyên âm')
+    }
+</script>
