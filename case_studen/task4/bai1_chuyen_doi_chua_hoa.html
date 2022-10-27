@@ -12,13 +12,26 @@
     let a = prompt('nhập chuỗi')
     b = a.toLowerCase().replace(/(^|\s)\S/g, l => l.toUpperCase())
 
-    let arr = []
-    arr.push(b)
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === ' ' && arr[i + 1] === ' ') {
-            arr.splice(i, 1)
+    let arr =b.split(' ')
+
+
+let max=0
+    let result
+    for(let i=0;i<arr.length;i++){
+        if (arr[i].length>max){
+            max=arr[i].length
+            result=arr[i]
+
         }
     }
+    document.writeln('chữ cái dài nhất mảng là' +result)
+    let arrA=[]
+    arrA.push(b)
+    for (let i = 0; i < arrA.length; i++) {
+        if (arrA[i] === ' ' && arrA[i + 1] === ' ') {
+            arrA.splice(i, 1)
+        }
+    }
+    document.writeln('mảng đó là '+arrA+"")
 
-    document.writeln(arr)
 </script>
