@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a = prompt('nhập chuỗi')
+    b = a.toLowerCase().replace(/(^|\s)\S/g, l => l.toUpperCase())
+
+    let arr = []
+    arr.push(b)
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === ' ' && arr[i + 1] === ' ') {
+            arr.splice(i, 1)
+        }
+    }
+
+    document.writeln(arr)
+</script>

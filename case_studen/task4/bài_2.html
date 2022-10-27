@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: aqua
+        }
+
+        p {
+            color: brown
+        }
+    </style>
+</head>
+<body>
+<p id="resutl "></p>
+</body>
+</html>
+<script>
+    let arr = 'accbdsafefsbdjw'
+    let newArr = []
+
+    for (i = 0; i < arr.length; i++) {
+        if (newArr.indexOf(arr[i]) === -1) {
+            newArr.push(arr[i])
+        }
+    }
+    document.getElementById("resutl ").innerHTML = 'Có ' + newArr.length + ' phần tử khác nhau là ' + newArr
+</script>
