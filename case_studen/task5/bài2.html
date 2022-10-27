@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arr=[1,2,2,1]
+
+    let arrA=[]
+    for (let i=0;i<arr.length;i++) {
+        let count=0
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[i]==arr[j]) {
+                count++
+            }
+        }
+        arrA.push(count)
+    }
+    let flag=false
+    for (i=0 ;i<arrA.length;i++){
+        if(arr[i]===arr[i+1]){
+            flag=true
+        }
+    }if(flag==false){
+        alert(false)
+    }else{
+        alert(true)
+    }
+</script>
