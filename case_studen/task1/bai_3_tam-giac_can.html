@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let m = 5
+    let n = 5
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5 * 2 - 1; j++) {
+            if (j >= m && j <= n) {
+                document.write('*')
+            } else {
+                document.write('&nbsp&nbsp')
+            }
+
+        }
+        m--
+        n++
+        document.write('<br>')
+
+
+    }
+</script>
