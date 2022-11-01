@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let n=+prompt('nhập độ dài mảng ')
+    let arr=[]
+    let arrOne=[]
+    let arrTwo=[]
+    for (let i=0;i<n;i++){
+       let a=prompt('nhập phần tử số ' +i)
+        arr.push(a)
+    }
+    for (let i=0;i<n;i++){
+    if (arr[i]%2===0){
+        arrOne.push(arr[i])
+    }else {
+        arrTwo.push(arr[i])
+    }
+
+    }
+    document.writeln('mảng số chắn  ' +arrOne)
+    document.writeln('mảng số lẻ ' +arrTwo)
+</script>

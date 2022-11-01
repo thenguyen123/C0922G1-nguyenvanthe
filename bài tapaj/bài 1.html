@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let n = +prompt('nhập chiều dài mảng số nguyên ')
+    let arr = []
+    let sum = 0
+    let count = 0
+    let showIndex = ''
+    let count1 = 0
+
+
+    for (let i = 0; i < n; i++) {
+        let a = parseInt(prompt('nhập phần tử số ' + i))
+        arr.push(a)
+    }
+
+    for (let i = 0; i < n; i++) {
+        if (arr[i] % 2 !== 0 && i % 2 === 0) {
+            sum += arr[i]
+            count++
+        }
+    }
+    document.writeln('tông trung bình cộng các số lẻ ở vị trí chẵn là ' + sum / count + "<br>")
+    let max = arr[0]
+    for (let i = 0; i < n; i++) {
+        if (max < arr[i]) {
+            max = arr[i]
+        }
+    }
+    document.writeln('số lớn nhất là ' + max + "<br>")
+    let min = arr[0]
+    for (let i = 0; i < n; i++) {
+        if (min > arr[i]) {
+            min = arr[i]
+        }
+    }
+    for (let i = 0; i < n; i++) {
+        if (min === arr[i]) {
+            showIndex += i + ' '
+        }
+    }
+    document.writeln(' các vị trí nhỏ nhất trong mảng là ' + showIndex + "<br>")
+    let arrPrime = []
+
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j <= arr[i]; j++) {
+            if (arr[i] == j * j) {
+                count1++
+            }
+
+        }
+
+    }
+    document.writeln('các số chính phương có trong mảng' + count1)
+
+    function isPrime(number) {
+
+        count = 0
+        let Prime = false;
+        if (number < 1) {
+
+
+        } else if (number == 2) {
+            arrPrime.push(2)
+        } else {
+            for (i = 1; i <= number; i++) {
+                if (number % i == 0) {
+                    count += 1;
+                }
+            }
+        }
+        if (count == 2) {
+            Prime = true
+        }
+        if (Prime) {
+
+            arrPrime.push(number)
+
+        }
+    }
+
+    for (let i = 0; i < n; i++) {
+        isPrime(arr[i])
+
+    }
+    document.writeln('số nguyên tố là' + arrPrime + "<br>")
+    let arrEdit = arr
+    let arrDelete = arr
+    document.writeln('sắp xếp mảng ' + arr.sort((a, b) => a - b)+ '<br>')
+    let arrDelete1 = []
+    for (let i = 0; i < n; i++) {
+        if (arrDelete[i] >= 0) {
+            arrDelete1.push(arr[i])
+        }
+    }
+    for (let i = 0; i < n; i++) {
+        if (arrEdit[i] < 0) {
+
+            arrEdit.splice(i, 1, 0)
+        }
+    }
+    document.writeln('mảng thay thế ' + arrEdit+ '<br>')
+
+
+    document.writeln('mảng xóa ' + arrDelete1 + '<br>')
+
+
+</script>

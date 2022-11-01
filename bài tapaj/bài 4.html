@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let n=+prompt('nhập độ dài mảng')
+    let b=(n-(n%2))/2
+
+
+    let arr=[]
+    for (let i=0;i<n;i++){
+       let a=+prompt('nhập phần tử số ' +i)
+        arr.push(a)
+    }
+     let arrOne=arr.slice(0,b)
+     let arrTwo=arr.slice(b)
+
+   document.writeln('mảng một ' +arrOne)
+   document.writeln('mảng hai ' +arrTwo)
+
+</script>

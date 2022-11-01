@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arr=[]
+    let arrTwo=[]
+    let arrOne=[]
+    let n=+prompt('nhập chiều dài mảng')
+    if (n<=0){
+        alert('nhập lại số')
+        n= +prompt('nhập chiều dài mảng')
+    }
+    for (let i=0;i<n;i++){
+        let a= parseInt(prompt('nhập phần tử mảng' +i))
+        arr.push(a)
+    }
+    for (let i=0;i<n;i++){
+        if (arr[i]%2===0){
+            arrOne.push(arr[i])
+        }else {
+            arrTwo.push(arr[i])
+        }
+
+    }
+    document.writeln(' Độ dài mảng số chắn  ' +arrOne.length)
+    document.writeln(' Độ dài mảng số lẻ ' +arrTwo.length)
+</script>

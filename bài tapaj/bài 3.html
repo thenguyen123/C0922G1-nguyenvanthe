@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let n=+prompt('nhập chiều dài mảng')
+    let arr=[]
+    for (let i=0;i<n;i++){
+       arr[i]=prompt('nhập phần tử cho mảng')
+        for (let j=0;j<i;j++)
+            if (arr[i]===arr[j]){
+                alert('nhập lại phần tử' +i)
+                i--
+                break;
+
+            }
+
+    }document.writeln( 'mảng đó là'+ arr)
+</script>
